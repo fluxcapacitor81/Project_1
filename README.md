@@ -4,11 +4,11 @@ The files in this repository were used to configure the network depicted below.
 
 **Note**: The following image link needs to be updated. Replace `diagram_filename.png` with the name of your diagram image file.  
 
-(diagrams/My_Azure_VPC.png)
+![Filepath to diagram](diagrams/My_Azure_VPC.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible file may be used to install only certain pieces of it, such as Filebeat.
 
-  - ansible/Filebeat/filebeat-playbook.yml
+  - ![Filebeat-playbook file](ansible/Filebeat/filebeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topologu
@@ -22,8 +22,8 @@ This document contains the following details:
 ### Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
-
-Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
+  
+  Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 - Load balancers functions as a reverse proxy distributes traffic across the servers placed behind it.  They increase the amount of simultaneous users by redirecting to another server before the first one is overloaded.  This essentially helps to prevent DOS attacks and also assure availability.  
   A jump box is a secure system that admins connect for systems administration to other servers in the network.  It sits in a separate "zone" than the servers behind it.  It is a hardened system that "jumps" through these different zones to access the other servers.
 
@@ -73,7 +73,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(images/my_docker_ps_output.png)
+![Filepath to docker ps output](images/my_docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
